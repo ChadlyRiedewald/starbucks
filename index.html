@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.webp" type="image/x-icon" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>
       Starbucks® Rewards – Order Ahead, Endless Extras, Free Coffee: Starbucks Coffee Company
@@ -11,28 +12,56 @@
   </head>
   <body>
     <header>
-      <nav class="navbar container">
-        <div class="left-side">
-          <img id="logo" src="./assets/logo.svg" width="50px" alt="" />
-          <div class="links">
-            <a href="#">Menu</a>
-            <a href="#">Rewards</a>
-            <a href="#">Gift Cards</a>
+      <div class="sticky">
+        <nav class="navbar container">
+          <div class="left-side">
+            <img id="logo" src="./assets/logo.svg" width="50px" alt="" />
+            <div class="links">
+              <a href="#">Menu</a>
+              <a class="active" href="#">Rewards</a>
+              <a href="#">Gift Cards</a>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="find-a-store">
+              <svg
+                aria-hidden="true"
+                class="find-a-store"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="-10 0 32 22"
+                style="width: 32px; height: 32px; overflow: visible; fill: currentcolor"
+              >
+                <path
+                  d="M12,11.475 C10.5214286,11.475 9.32142857,10.299 9.32142857,8.85 C9.32142857,7.401 10.5214286,6.225 12,6.225 C13.4785714,6.225 14.6785714,7.401 14.6785714,8.85 C14.6785714,10.299 13.4785714,11.475 12,11.475 M12,1.5 C7.85357143,1.5 4.5,4.7865 4.5,8.85 C4.5,14.3625 12,22.5 12,22.5 C12,22.5 19.5,14.3625 19.5,8.85 C19.5,4.7865 16.1464286,1.5 12,1.5"
+                ></path>
+              </svg>
+              <a href="#">Find a store</a>
+            </div>
+            <button class="sign-in">Sign in</button>
+            <button class="join-now">Join now</button>
+          </div>
+        </nav>
+        <div class="green-bar">
+          <div class="container">
+            <h1>Starbucks® Rewards</h1>
           </div>
         </div>
-        <div class="right-side">
-          <div class="find-a-store">
-            <img src="./assets/location.svg" alt="" width="24px" />
-            <a class="nav-text" href="#">Find a store</a>
+      </div>
+      <div class="banner">
+        <div class="container banner-container">
+          <div class="banner-text">
+            <h2>
+              Free coffee
+              <br />
+              is a tap away
+            </h2>
+            <p class="banner-p">Join now to start earning Rewards.</p>
+            <button class="join-now banner-btn">Join now</button>
+            <p class="banner-p">
+              Or <span class="ul">join in the app</span> for the best experience
+            </p>
           </div>
-
-          <button id="sign-in">Sign in</button>
-          <button id="join-now">Join now</button>
-        </div>
-      </nav>
-      <div class="green-bar">
-        <div class="container">
-          <h2>Starbucks® Rewards</h2>
         </div>
       </div>
     </header>
