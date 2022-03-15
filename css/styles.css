@@ -14,8 +14,10 @@
   --dark-green: #1e3932;
   --mint: #d4e9e2;
   --light-mint: #f1f8f6;
-  --steps-bg: #f3f1e7;
+  --steps-bg: #f2f0eb;
   --terms-bg: #f9f9f9;
+  --gold: #cba258;
+  --terms-heading: rgba(0, 0, 0, 0.58);
 }
 
 /* --------------------------------------------- 2. Typography --------------------------------------------------- */
@@ -23,11 +25,15 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+a {
+  color: var(--green);
+}
+
 .links a,
 h1 {
-  text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
+  text-decoration: none;
   letter-spacing: 0.1em;
   font-size: 14px;
   color: #000;
@@ -67,6 +73,23 @@ h4 {
 .container {
   width: 1440px;
   margin: auto;
+}
+
+.thin-container {
+  display: flex;
+  flex-direction: column;
+  width: 87%;
+  text-align: center;
+  margin: 127px auto;
+}
+
+.steps {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 48px auto 0 auto;
+  gap: 60px;
+  width: 100%;
 }
 
 .navbar {
@@ -213,26 +236,238 @@ h4 {
 
 /* --------------------------------------------- 4.4 Getting Started --------------------------------------------- */
 
-.getting-started {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  margin: 125px auto;
-  text-align: center;
-}
-
-.getting-started p {
+.steps p {
   margin-top: 16px;
 }
 
-.getting-started img {
+.steps img {
   margin-bottom: 24px;
 }
 
-.get-started-steps {
-  display: flex;
-  flex-direction: row;
+.step {
+  max-width: 30%;
+}
+
+/* --------------------------------------------- 4.5 Favorites --------------------------------------------------- */
+.up {
+  background-color: var(--light-mint);
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 5%);
+  z-index: 1;
+  position: relative;
   text-align: center;
-  margin: 48px auto 0 auto;
-  gap: 60px;
+}
+
+.up h3 {
+  padding: 48px 0;
+}
+
+.up a {
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+  padding: 30px;
+  position: relative;
+}
+
+.points {
+  padding-bottom: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.up span {
+  color: var(--gold);
+  font-size: 12px;
+  margin: auto;
+}
+
+.down {
+  background-color: var(--mint);
+  z-index: -1;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  gap: 70px;
+}
+
+.down h4 {
+  font-size: 24px;
+  padding-bottom: 16px;
+}
+
+.text {
+  width: 20%;
+}
+
+.active2::before {
+  content: '';
+  border-bottom: 4px solid var(--green);
+  position: absolute;
+  width: 100px;
+  left: -5px;
+  top: 81px;
+}
+
+/* --------------------------------------------- 4.6 Extras ------------------------------------------------------ */
+.heading-p {
+  width: 60%;
+  margin: auto;
+  padding-top: 16px;
+}
+
+.extras a {
+  display: block;
+  padding: 16px;
+}
+
+/* --------------------------------------------- 4.7 Earn -------------------------------------------------------- */
+.earn {
+  background-color: var(--steps-bg);
+  padding: 48px 0;
+  margin-bottom: 128px;
+}
+
+.earn img {
+  width: 112px;
+  height: 158px;
+}
+
+.heading {
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  padding-bottom: 64px;
+  margin-bottom: 24px;
+}
+
+.heading h3 {
+  padding-bottom: 16px;
+}
+
+.star {
+  display: flex;
+  width: 100%;
+}
+
+.img-container {
+  display: flex;
+  gap: 16px;
+  width: 35%;
+  padding: 0 24px;
+}
+
+.text-container p {
+  margin-top: 16px;
+}
+
+.earn span {
+  font-size: 14px;
+}
+
+.earn-heading {
+  width: 18%;
+}
+
+.earn-heading h3 {
+  font-size: 24px;
+}
+
+.earn hr {
+  margin: 24px 0 48px 0;
+  opacity: 0.3;
+}
+
+/* --------------------------------------------- 4.8 Codes ------------------------------------------------------- */
+
+.codes {
+  width: 1440px;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 128px;
+}
+
+.container-codes {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+
+.m16 {
+  margin-bottom: 16px;
+}
+
+.container-codes input {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  margin: 16px 0;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 40%);
+}
+
+.container-codes button {
+  align-self: flex-end;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fff;
+  border: #000 1px solid;
+  padding: 5px 16px;
+  border-radius: 2em;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  transition: 0.2s;
+  margin: 16px 0 32px 0;
+}
+
+.container-codes button:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+  transition: 0.2s;
+}
+
+.small-text {
+  font-size: 14px;
+}
+
+.margin-top {
+  margin-top: 100px;
+}
+
+/* --------------------------------------------- 4.8 Terms ------------------------------------------------------- */
+.terms {
+  background-color: var(--terms-bg);
+  padding: 48px 0;
+}
+
+.heading-terms {
+  width: 1440px;
+  margin: auto;
+  padding-bottom: 32px;
+}
+
+h5 {
+  color: var(--terms-heading);
+  letter-spacing: 0.1em;
+  font-size: 14px;
+  padding-bottom: 16px;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+}
+
+.left,
+.right {
+  width: 50%;
+}
+
+.footer-line {
+  margin: 48px 0;
 }
