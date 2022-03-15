@@ -18,6 +18,7 @@
   --terms-bg: #f9f9f9;
   --gold: #cba258;
   --terms-heading: rgba(0, 0, 0, 0.58);
+  --footer-links: rgba(0, 0, 0, 0.58);
 }
 
 /* --------------------------------------------- 2. Typography --------------------------------------------------- */
@@ -338,7 +339,7 @@ h4 {
 .heading {
   text-align: center;
   margin: auto;
-  width: 60%;
+  width: 50%;
   padding-bottom: 64px;
   margin-bottom: 24px;
 }
@@ -439,7 +440,7 @@ h4 {
   margin-top: 100px;
 }
 
-/* --------------------------------------------- 4.8 Terms ------------------------------------------------------- */
+/* --------------------------------------------- 4.9 Terms ------------------------------------------------------- */
 .terms {
   background-color: var(--terms-bg);
   padding: 48px 0;
@@ -468,6 +469,74 @@ h5 {
   width: 50%;
 }
 
+/* --------------------------------------------- 4.10 Footer ----------------------------------------------------- */
+
 .footer-line {
+  border: 1px rgb(0 0 0 / 30%) solid;
+  width: 100%;
   margin: 48px 0;
+  opacity: 0.3;
+  box-shadow: 0 -1px 3px rgb(0 0 0 / 10%), 0 -2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+}
+
+.footer-container {
+  width: 1440px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  width: 16%;
+  padding: 16px;
+}
+
+footer h4 {
+  font-size: 19px;
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--footer-links);
+  margin-bottom: 8px;
+  padding: 8px 0;
+}
+
+.social {
+  display: flex;
+  gap: 16px;
+}
+
+.terms-links {
+  padding: 32px 0 16px 0;
+}
+
+.terms-links a {
+  color: #000000de;
+  font-size: 16px;
+  padding: 0 16px;
+}
+
+.terms-links a:first-child {
+  padding-left: 0;
+}
+
+.terms-links span {
+  padding: 0 8px;
+}
+
+.copyright {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.58);
+  padding-bottom: 32px;
 }
