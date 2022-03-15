@@ -40,6 +40,16 @@ h2 {
   line-height: 1.29;
 }
 
+h3 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 19px;
+  font-weight: 600;
+}
+
 .links a:hover {
   color: var(--green);
 }
@@ -170,16 +180,11 @@ h2 {
 .banner {
   background-color: var(--mint);
   background-image: url('../assets/banner.png');
+  background-repeat: no-repeat;
   background-position: 50%;
   background-size: auto 100%;
   height: 810px;
   z-index: -1;
-}
-
-.banner-text {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
 }
 
 .banner-container {
@@ -204,4 +209,30 @@ h2 {
 .banner-btn:hover {
   background-color: rgba(0, 117, 74, 0.8);
   border-color: rgba(0, 117, 74, 0.8);
+}
+
+/* --------------------------------------------- 4.4 Getting Started --------------------------------------------- */
+
+.getting-started {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 125px auto;
+  text-align: center;
+}
+
+.getting-started p {
+  margin-top: 16px;
+}
+
+.getting-started img {
+  margin-bottom: 24px;
+}
+
+.get-started-steps {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 48px auto 0 auto;
+  gap: 60px;
 }
